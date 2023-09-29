@@ -1850,7 +1850,7 @@ chalk@^2.0.0:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^4.0.0, chalk@^4.0.2, chalk@^4.1.0, chalk@^4.1.1, chalk@^4.1.2:
+chalk@^4.0.0, chalk@^4.0.2, chalk@^4.1.0, chalk@^4.1.1, chalk@~4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
@@ -1863,15 +1863,14 @@ chardet@^0.7.0:
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
 
-chevrotain-allstar@^0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/chevrotain-allstar/-/chevrotain-allstar-0.1.3.tgz#abbdbf93ecce91939de68cd49d3e14bad168cca9"
-  integrity sha512-mKpm/XPHilyaX27z5gSQDKlyY5IFBCqRBjPLdWoa5Y4jRDjMZJ/hFmgIsV4Y35ytdkuQQC9Mhgiz5JTKnSPpBA==
+chevrotain-allstar@~0.1.4:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/chevrotain-allstar/-/chevrotain-allstar-0.1.7.tgz#66cb0eed6ce53c9ef07621a29fcf149a9f3bc48d"
+  integrity sha512-oMSHkXVCDQxnj3tDCqcEoMnNIEiYlAYT0FVja1PaLrT3njXGvg5JXTXs/tk2NI42SR3LMJyqTNgjR4VyDIf19w==
   dependencies:
-    chevrotain "^10.4.1"
     lodash "^4.17.21"
 
-chevrotain@^10.4.1:
+chevrotain@~10.4.2:
   version "10.4.2"
   resolved "https://registry.yarnpkg.com/chevrotain/-/chevrotain-10.4.2.tgz#9abeac6a60134931c0a0788b206400e5f7a3daba"
   integrity sha512-gzF5GxE0Ckti5kZVuKEZycLntB5X2aj9RVY0r4/220GwQjdnljU+/t3kP74/FMWC7IzCDDEjQ9wsFUf0WCdSHg==
@@ -2040,10 +2039,10 @@ commander@^7.0.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
   integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
 
-commander@^8.0.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-8.3.0.tgz#4837ea1b2da67b9c616a67afbb0fafee567bca66"
-  integrity sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==
+commander@~10.0.0:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-10.0.1.tgz#881ee46b4f77d1c1dccc5823433aa39b022cbe06"
+  integrity sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==
 
 common-ancestor-path@^1.0.1:
   version "1.0.1"
@@ -2782,6 +2781,15 @@ fs-extra@^9.1.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
+fs-extra@~11.1.0:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.1.1.tgz#da69f7c39f3b002378b0954bb6ae7efdc0876e2d"
+  integrity sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
+
 fs-minipass@^2.0.0, fs-minipass@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fs-minipass/-/fs-minipass-2.1.0.tgz#7f5036fdbf12c63c169190cbe4199c852271f9fb"
@@ -3225,10 +3233,10 @@ interpret@^2.2.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-2.2.0.tgz#1a78a0b5965c40a5416d007ad6f50ad27c417df9"
   integrity sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==
 
-inversify@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/inversify/-/inversify-5.1.1.tgz#6fbd668c591337404e005a1946bfe0d802c08730"
-  integrity sha512-j8grHGDzv1v+8T1sAQ+3boTCntFPfvxLCkNcxB1J8qA0lUN+fAlSyYd+RXKvaPRL4AGyPxViutBEJHNXOyUdFQ==
+inversify@~6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/inversify/-/inversify-6.0.1.tgz#b20d35425d5d8c5cd156120237aad0008d969f02"
+  integrity sha512-B3ex30927698TJENHR++8FfEaJGqoWOgI6ZY5Ht/nLUsFCwHn6akbwtnUAPCgUepAnTpe2qHxhDNjoKLyz6rgQ==
 
 ip@^2.0.0:
   version "2.0.0"
@@ -3500,10 +3508,10 @@ jsonparse@^1.2.0, jsonparse@^1.3.1:
   resolved "https://registry.yarnpkg.com/jsonparse/-/jsonparse-1.3.1.tgz#3f4dae4a91fac315f71062f8521cc239f1366280"
   integrity sha512-POQXvpdL69+CluYsillJ7SUhKvytYjW9vG/GKpnf+xP8UWgYEM/RaMzHHofbALDiKbbP1W8UEYmgGl39WkPZsg==
 
-jsonschema@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/jsonschema/-/jsonschema-1.4.0.tgz#1afa34c4bc22190d8e42271ec17ac8b3404f87b2"
-  integrity sha512-/YgW6pRMr6M7C+4o8kS+B/2myEpHCrxO4PEWnqJNBFMjn7EWXqlQ4tGwL6xTHeRplwuZmcAncdvfOad1nT2yMw==
+jsonschema@~1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/jsonschema/-/jsonschema-1.4.1.tgz#cc4c3f0077fb4542982973d8a083b6b34f482dab"
+  integrity sha512-S6cATIPVv1z0IlxdN+zUk5EPjkGCdnhN4wVSBlvoUO1tOLJootbo9CquNJmbIh4yikWHiUedhRYrNPn1arpEmQ==
 
 just-diff-apply@^5.2.0:
   version "5.4.1"
@@ -3520,36 +3528,45 @@ kind-of@^6.0.2, kind-of@^6.0.3:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-langium-cli@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/langium-cli/-/langium-cli-1.0.0.tgz#67121d5983cc4788b77c4f6c76c4e3835654ca74"
-  integrity sha512-F5RZu3/PrlRfebMM6irtHDk2cj5PdUzM4y3M5kNu8k5IC3gIhc4QN+aDD2XHYz8hQSA+bCRUIDwCdhy/7VN4cg==
+langium-cli@^1.3.0:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/langium-cli/-/langium-cli-1.3.1.tgz#d73777fbf866d429e242b4bf7676d1251aafa994"
+  integrity sha512-9faKpioKCjBD0Z4y165+wQlDFiDHOXYBlhPVgbV+neSnSB70belZLNfykAVa564360h7Br/5PogR5jW2n/tOKw==
   dependencies:
-    chalk "^4.1.2"
-    commander "^8.0.0"
-    fs-extra "^9.1.0"
-    jsonschema "^1.4.0"
-    langium "~1.0.0"
-    lodash "^4.17.21"
+    chalk "~4.1.2"
+    commander "~10.0.0"
+    fs-extra "~11.1.0"
+    jsonschema "~1.4.1"
+    langium "~1.3.0"
+    langium-railroad "~1.3.0"
+    lodash "~4.17.21"
+
+langium-railroad@~1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/langium-railroad/-/langium-railroad-1.3.0.tgz#ef2bb50ac26811332c11ea9a62b4e66f96c3f7f4"
+  integrity sha512-I3gx79iF+Qpn2UjzfHLf2GENAD9mPdSZHL3juAZLBsxznw4se7MBrJX32oPr/35DTjU9q99wFCQoCXu7mcf+Bg==
+  dependencies:
+    langium "~1.3.0"
+    railroad-diagrams "^1.0.0"
 
 langium-sprotty@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/langium-sprotty/-/langium-sprotty-1.0.0.tgz#38170f88b35d1ebde4463df0e6787175ed649b82"
-  integrity sha512-73nPJp9KiRufaDDDyryCIEpzCzSc7oYLWav1MTx9uMR/BNy0jXZkmZMmQ0wrEHyOb4LvKxmRePvT58tlEZA5vg==
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/langium-sprotty/-/langium-sprotty-1.3.0.tgz#7fcdf772c26d21e156b99454915dddd4be0c9886"
+  integrity sha512-0nvZqG3IoNVNb1tw0VEUtQ1srYoioomj1BvojCNc6HjL15HAkY6sET70o/XK6JQrd009Ucd1h3Ccajrh2RTd6w==
   dependencies:
-    langium "~1.0.0"
-    sprotty-protocol "^0.12.0"
+    langium "~1.3.0"
+    sprotty-protocol "~0.13.0"
 
-langium@^1.0.1, langium@~1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/langium/-/langium-1.0.1.tgz#de0f599c0a670b4eb79c7cc1c5a2d24e9d97d2fd"
-  integrity sha512-9w5NRsspYOOXV56q1EhXeFJWkboAVKZDzIEqPLraMQPQy6fvq104wlVwgvF6w9H4IcCpDHCsHJLsfzQMWBsjAA==
+langium@^1.0.1, langium@~1.3.0:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/langium/-/langium-1.3.1.tgz#08f570a3e506141f482d32e71814a0d5c991c75c"
+  integrity sha512-xC+DnAunl6cZIgYjRpgm3s1kYAB5/Wycsj24iYaXG9uai7SgvMaFZSrRvdA5rUK/lSta/CRvgF+ZFoEKEOFJ5w==
   dependencies:
-    chevrotain "^10.4.1"
-    chevrotain-allstar "^0.1.1"
-    vscode-languageserver "^8.0.2"
-    vscode-languageserver-textdocument "^1.0.7"
-    vscode-uri "^3.0.2"
+    chevrotain "~10.4.2"
+    chevrotain-allstar "~0.1.4"
+    vscode-languageserver "~8.0.2"
+    vscode-languageserver-textdocument "~1.0.8"
+    vscode-uri "~3.0.7"
 
 lerna@^6.1.0:
   version "6.1.0"
@@ -3680,7 +3697,7 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
-lodash@4.17.21, lodash@^4.17.15, lodash@^4.17.21:
+lodash@4.17.21, lodash@^4.17.15, lodash@^4.17.21, lodash@~4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -4669,6 +4686,11 @@ quick-lru@^4.0.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-4.0.1.tgz#5b8878f113a58217848c6482026c73e1ba57727f"
   integrity sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
 
+railroad-diagrams@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/railroad-diagrams/-/railroad-diagrams-1.0.0.tgz#eb7e6267548ddedfb899c1b90e57374559cddb7e"
+  integrity sha512-cz93DjNeLY0idrCNOH6PviZGRN9GJhsdm9hpn1YCS879fj4W+x5IFJhhkRZcwVgMmFF7R82UA/7Oh+R8lLZg6A==
+
 randombytes@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
@@ -5151,36 +5173,35 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-sprotty-elk@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/sprotty-elk/-/sprotty-elk-0.13.0.tgz#7e29749d311916f3804edf8536159ee9c0a93d95"
-  integrity sha512-Rb8WIvO5sf2Src/chYb1tAM7EgK/NuHk3WFwEHNVNL5LlG5HlvDIchCRP5CFXOwk2IIX2TnP9v6MD+jltzb5iw==
+sprotty-elk@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/sprotty-elk/-/sprotty-elk-0.14.0.tgz#afa5d9293e92541656dacd48d6fc59643bed587a"
+  integrity sha512-YojJkqUtZVcTmpzWh7br+Ktt606PaURCVUdFwPGCcCTPeOTTIEtwxs8aYV9NqTtyw2AQwOVIRGzkM61+NCi+nQ==
   dependencies:
     elkjs "^0.8.2"
-    sprotty-protocol "^0.13.0"
+    sprotty-protocol "^0.14.0"
   optionalDependencies:
-    inversify "^5.1.1"
+    inversify "~6.0.1"
 
-sprotty-protocol@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/sprotty-protocol/-/sprotty-protocol-0.12.0.tgz#542eb6396a645f85f8cfc2e7ef1d9b90c7b1980b"
-  integrity sha512-vbov+XfbmSeMYb46vm6dJvK3q7YKUvg0q7JnM6H7Ca5qY8TaZCEZ5Vc8zHKFZGWchcwnQYKqLTzwDItsMikD0A==
+sprotty-protocol@^0.14.0, sprotty-protocol@~0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/sprotty-protocol/-/sprotty-protocol-0.14.0.tgz#6adccbd10a5d17f945967c12f07b8cd0b92fe9b3"
+  integrity sha512-MQ7iozBEFcOVZK3WGcpo6/6sXeCZmHoFv+mSQLDW5epVWu93les8Cqcvp/TgIeZksUugPp77j6MWJEBZwcxx7w==
 
-sprotty-protocol@^0.13.0, sprotty-protocol@~0.13.0:
+sprotty-protocol@~0.13.0:
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/sprotty-protocol/-/sprotty-protocol-0.13.0.tgz#ccd04a65b66f324bd847b8f55783f9fcd3df8129"
   integrity sha512-yOaah3BNDwso6gS1yo/ceh+g/KOHeWLbajGiiyz9ngWLV4UUyP9VOWXN8jFI57k/0iAF5qhHTI7nkAeTqHFdLA==
 
-sprotty@^0.13.0, sprotty@~0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/sprotty/-/sprotty-0.13.0.tgz#d704211a8fbdecf4c82ece1b276ad83b06a4e8ec"
-  integrity sha512-XA5GV1IhdqBcdQn14qXUy9vQ/cDe/az6+gANOIA+LWrI+5iYH8hoEwbkXILJnWyV/a9T/66IP9sEQ8U0g90o0Q==
+sprotty@^0.14.0, sprotty@~0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/sprotty/-/sprotty-0.14.0.tgz#4691a57b90eceb0e1317580518d65587280acfc3"
+  integrity sha512-hSnkZ0qVE2zqbbFd1TVUjXiSE6HIyCsdDHC4F0/BDH8RPYtxTjztTQu1EjFPuCAVDB7whHwyTIEiM1AR5QbMaw==
   dependencies:
     autocompleter "^7.0.1"
     file-saver "^2.0.5"
-    inversify "^5.1.1"
     snabbdom "^3.5.1"
-    sprotty-protocol "^0.13.0"
+    sprotty-protocol "^0.14.0"
     tinyqueue "^2.0.3"
 
 ssri@^9.0.0, ssri@^9.0.1:
@@ -5628,17 +5649,17 @@ vscode-languageserver-protocol@3.17.2, vscode-languageserver-protocol@^3.17.2:
     vscode-jsonrpc "8.0.2"
     vscode-languageserver-types "3.17.2"
 
-vscode-languageserver-textdocument@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.7.tgz#16df468d5c2606103c90554ae05f9f3d335b771b"
-  integrity sha512-bFJH7UQxlXT8kKeyiyu41r22jCZXG8kuuVVA33OEJn1diWOZK5n8zBSPZFHVBOu8kXZ6h0LIRhf5UnCo61J4Hg==
+vscode-languageserver-textdocument@~1.0.8:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.11.tgz#0822a000e7d4dc083312580d7575fe9e3ba2e2bf"
+  integrity sha512-X+8T3GoiwTVlJbicx/sIAF+yuJAqz8VvwJyoMVhwEMoEKE/fkDmrqUgDMyBECcM2A2frVZIUj5HI/ErRXCfOeA==
 
 vscode-languageserver-types@3.17.2:
   version "3.17.2"
   resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.17.2.tgz#b2c2e7de405ad3d73a883e91989b850170ffc4f2"
   integrity sha512-zHhCWatviizPIq9B7Vh9uvrH6x3sK8itC84HkamnBWoDFJtzBf7SWlpLCZUit72b3os45h6RWQNC9xHRDF8dRA==
 
-vscode-languageserver@^8.0.2:
+vscode-languageserver@^8.0.2, vscode-languageserver@~8.0.2:
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/vscode-languageserver/-/vscode-languageserver-8.0.2.tgz#cfe2f0996d9dfd40d3854e786b2821604dfec06d"
   integrity sha512-bpEt2ggPxKzsAOZlXmCJ50bV7VrxwCS5BI4+egUmure/oI/t4OlFzi/YNtVvY24A2UDOZAgwFGgnZPwqSJubkA==
@@ -5664,15 +5685,15 @@ vscode-messenger@^0.4.4:
   dependencies:
     vscode-messenger-common "^0.4.3"
 
-vscode-uri@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-3.0.2.tgz#ecfd1d066cb8ef4c3a208decdbab9a8c23d055d0"
-  integrity sha512-jkjy6pjU1fxUvI51P+gCsxg1u2n8LSt0W6KrCNQceaziKzff74GoWmjVG46KieVzybO1sttPQmYfrwSHey7GUA==
-
 vscode-uri@^3.0.6:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-3.0.6.tgz#5e6e2e1a4170543af30151b561a41f71db1d6f91"
   integrity sha512-fmL7V1eiDBFRRnu+gfRWTzyPpNIHJTc4mWnFkwBUmO9U3KPgJAmTx7oxi2bl/Rh6HLdU7+4C9wlj0k2E4AdKFQ==
+
+vscode-uri@~3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-3.0.7.tgz#6d19fef387ee6b46c479e5fb00870e15e58c1eb8"
+  integrity sha512-eOpPHogvorZRobNqJGhapa0JdwaxpjVvyBp0QIUMRMSf8ZAlqOdEquKuRmw9Qwu0qXtJIWqFtMkmvJjUZmMjVA==
 
 walk-up-path@^1.0.0:
   version "1.0.0"

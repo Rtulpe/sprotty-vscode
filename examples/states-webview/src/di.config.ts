@@ -19,11 +19,11 @@ import 'sprotty/css/sprotty.css';
 
 import { Container, ContainerModule } from 'inversify';
 import {
-    configureCommand, configureModelElement, ConsoleLogger, CreateElementCommand, HtmlRoot,
-    HtmlRootView, LogLevel, ManhattanEdgeRouter, overrideViewerOptions, PreRenderedElement,
-    PreRenderedView, RectangularNodeView, SGraphView, SLabelView, SModelRoot,
-    SRoutingHandle, SRoutingHandleView, TYPES, loadDefaultModules, SGraph, SLabel,
-    hoverFeedbackFeature, popupFeature, creatingOnDragFeature, editLabelFeature, labelEditUiModule
+    configureCommand, configureModelElement, ConsoleLogger, CreateElementCommand, HtmlRootView,
+    LogLevel, ManhattanEdgeRouter, overrideViewerOptions, PreRenderedView, RectangularNodeView,
+    SGraphView, SLabelView, SRoutingHandleView, TYPES, loadDefaultModules,
+    hoverFeedbackFeature, popupFeature, creatingOnDragFeature, editLabelFeature, labelEditUiModule,
+    SGraphImpl, SLabelImpl, HtmlRootImpl, PreRenderedElementImpl, SModelRootImpl, SRoutingHandleImpl
 } from 'sprotty';
 import { CustomRouter } from './custom-edge-router';
 import { CreateTransitionPort, StatesEdge, StatesNode } from './model';
@@ -35,22 +35,22 @@ const statesDiagramModule = new ContainerModule((bind, unbind, isBound, rebind) 
     rebind(ManhattanEdgeRouter).to(CustomRouter).inSingletonScope();
 
     const context = { bind, unbind, isBound, rebind };
-    configureModelElement(context, 'graph', SGraph, SGraphView, {
+    configureModelElement(context, 'graph', SGraphImpl, SGraphView, {
         enable: [hoverFeedbackFeature, popupFeature]
     });
     configureModelElement(context, 'node', StatesNode, RectangularNodeView);
-    configureModelElement(context, 'label', SLabel, SLabelView, {
+    configureModelElement(context, 'label', SLabelImpl, SLabelView, {
         enable: [editLabelFeature]
     });
-    configureModelElement(context, 'label:xref', SLabel, SLabelView, {
+    configureModelElement(context, 'label:xref', SLabelImpl, SLabelView, {
         enable: [editLabelFeature]
     });
     configureModelElement(context, 'edge', StatesEdge, PolylineArrowEdgeView);
-    configureModelElement(context, 'html', HtmlRoot, HtmlRootView);
-    configureModelElement(context, 'pre-rendered', PreRenderedElement, PreRenderedView);
-    configureModelElement(context, 'palette', SModelRoot, HtmlRootView);
-    configureModelElement(context, 'routing-point', SRoutingHandle, SRoutingHandleView);
-    configureModelElement(context, 'volatile-routing-point', SRoutingHandle, SRoutingHandleView);
+    configureModelElement(context, 'html', HtmlRootImpl, HtmlRootView);
+    configureModelElement(context, 'pre-rendered', PreRenderedElementImpl, PreRenderedView);
+    configureModelElement(context, 'palette', SModelRootImpl, HtmlRootView);
+    configureModelElement(context, 'routing-point', SRoutingHandleImpl, SRoutingHandleView);
+    configureModelElement(context, 'volatile-routing-point', SRoutingHandleImpl, SRoutingHandleView);
     configureModelElement(context, 'port', CreateTransitionPort, TriangleButtonView, {
         enable: [popupFeature, creatingOnDragFeature]
     });

@@ -15,8 +15,8 @@
  ********************************************************************************/
 import { inject, injectable } from 'inversify';
 import {
-    IContextMenuItemProvider, MenuItem, PopupHoverMouseListener, SButton, SButtonSchema,
-    SModelElement, SModelRoot, EMPTY_ROOT
+    IContextMenuItemProvider, MenuItem, PopupHoverMouseListener, SButtonSchema,
+    EMPTY_ROOT, SButtonImpl, SModelElementImpl, SModelRootImpl
 } from 'sprotty';
 import {
     Action, HtmlRoot as HtmlRootSchema, Point, RequestPopupModelAction, SModelElement as SModelElementSchema,
@@ -73,7 +73,7 @@ export interface PaletteButtonSchema extends SButtonSchema {
     range: Range;
 }
 
-export class PaletteButton extends SButton {
+export class PaletteButton extends SButtonImpl {
     codeActionKind: string;
     range: Range;
 }
@@ -83,7 +83,7 @@ export class PaletteMouseListener extends PopupHoverMouseListener {
 
     @inject(CodeActionProvider) codeActionProvider: CodeActionProvider;
 
-    override mouseDown(target: SModelElement, event: MouseEvent): (Action | Promise<Action>)[] {
+    override mouseDown(target: SModelElementImpl, event: MouseEvent): (Action | Promise<Action>)[] {
         if (target instanceof PaletteButton) {
             return [this.getWorkspaceEditAction(target)];
         }
@@ -114,7 +114,7 @@ export class CodeActionContextMenuProvider implements IContextMenuItemProvider {
     @inject(CodeActionProvider) codeActionProvider: CodeActionProvider;
     @inject(EditDiagramLocker) editDiagramLocker: EditDiagramLocker;
 
-    async getItems(root: Readonly<SModelRoot>, lastMousePosition?: Point | undefined): Promise<MenuItem[]> {
+    async getItems(root: Readonly<SModelRootImpl>, lastMousePosition?: Point | undefined): Promise<MenuItem[]> {
         const items: MenuItem[] = [];
         const range = getRange(root);
         if (this.editDiagramLocker.allowEdit && range !== undefined) {
